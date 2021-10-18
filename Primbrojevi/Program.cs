@@ -50,7 +50,7 @@ namespace Vsite.Pood
                 int j;
                 for (i = 2; i < Math.Sqrt(s) + 1; ++i)
                 {
-                    if (f[i]) // ako je i prekrižen, prekriži i višekratnike
+                    if (f[i]) // ako i nije prekrižen, prekriži njegove višekratnike
                     {
                         for (j = 2 * i; j < s; j += i)
                             f[j] = false; // višekratnik nije primbroj
